@@ -12,60 +12,45 @@
     <title>Document</title>
 
     <style>
-    body{
-        padding:50px;
-        margin:-5px;
-}
+        body{
+            padding:50px;
+            margin:-5px;
+        }
 
-footer {
-    display: block;
-    padding:50px;
-}
     </style>
 </head>
 <body>
-    
+
 
 
 <nav class="navbar navbar-expand-lg -dark bg-dark" id="navar" name="navar">
-  <a class="navbar-brand" href="#">NUEVO</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+    <a class="navbar-brand" href="#">NUEVO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">JEANS <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="#">ROPA</a>
-      </li>
-      <li class="nav-item active">
-        <a class="nav-link " href="#">VESTIDOS</a>
-      </li>
-      
-      <li class="nav-item active">
-        <a class="nav-link " href="#">BLUSAS</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">JEANS <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">ROPA</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link " href="#">VESTIDOS</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link " href="#">BLUSAS</a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+    </div>
 </nav>
-<!-- Footer -->
-<footer class="page-footer font-small blue">
-
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2018 Copyright:
-    <a href=""> LRSTORE.com</a>
-  </div>
-  <!-- Copyright -->
-
-</footer>
-<!-- Footer -->
 
 </body>
 </html>

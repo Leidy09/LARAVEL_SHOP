@@ -16,7 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('menu', function () {
-    return view('layout.menu');
+    return view('layouts.menu');
 });
 
 Route::get('contact', function () {
@@ -25,4 +25,15 @@ Route::get('contact', function () {
 
 Auth::routes();
 
+Route::get('perfil', function () {
+    return view('layouts.perfil');
+});
+
+Auth::routes();
+
+Route::get('inicio', function () {
+    return view('inicio');
+});
+
+Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
