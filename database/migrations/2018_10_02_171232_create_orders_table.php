@@ -15,11 +15,19 @@ class CreateOrdersTable extends Migration
     {
         Schema::create('orders', function (Blueprint $table) {
             $table->increments('id');
-            $table->date('datashoped');
+            $table->date('dataShoped');
+            $table->integer('userIdUser');
             $table->string('authotizationNumber',100);
-            $table->string('tracingNumber',45);
-            $table->string('postStatus',45);
+            $table->integer('idPayMethod');
+            $table->integer('idPostofficeProvider');
+            $table->string('tracing_Number',45);
+            $table->string('post_Status',45);
             $table->timestamps();
+
+            $table->foreign('userId_user')->references('id')->on('users');
+            $table->foreign('idPayMethod')->references('id')->on('pay_methods');
+            $table->foreign('idPostOficceProvider')->references('id')->on('post_office_providers');
+
         });
     }
 

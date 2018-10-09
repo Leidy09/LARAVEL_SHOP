@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePostofficeproviderTable extends Migration
+class CreatePostOfficeProvidersTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreatePostofficeproviderTable extends Migration
      */
     public function up()
     {
-        Schema::create('postofficeprovider', function (Blueprint $table) {
+        Schema::create('post_office_providers', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name',45);
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreatePostofficeproviderTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('postofficeprovider');
+        Schema::dropIfExists('post_office_providers');
     }
 }

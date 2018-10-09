@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePaymethodTable extends Migration
+class CreateImagesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,14 @@ class CreatePaymethodTable extends Migration
      */
     public function up()
     {
-        Schema::create('paymethod', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name',45);
+        Schema::create('images', function (Blueprint $table) {
+            $table->string('route_image',255);
+            $table->integer('idProduct');
             $table->timestamps();
+
+            $table->foreign('idProducto')->references('id')->on('products');
         });
+
     }
 
     /**
@@ -27,6 +30,6 @@ class CreatePaymethodTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('paymethod');
+        Schema::dropIfExists('images');
     }
 }

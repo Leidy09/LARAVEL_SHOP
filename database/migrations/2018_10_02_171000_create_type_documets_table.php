@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateImageTable extends Migration
+class CreateTypeDocumetsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,10 @@ class CreateImageTable extends Migration
      */
     public function up()
     {
-        Schema::create('image', function (Blueprint $table) {
+        Schema::create('type_documents', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('imagePath',255);
+            $table->string('name',45);
+            $table->string('abbreviation',10);
             $table->timestamps();
         });
     }
@@ -27,6 +28,6 @@ class CreateImageTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('image');
+        Schema::dropIfExists('type_documents');
     }
 }
