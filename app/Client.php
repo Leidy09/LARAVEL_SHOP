@@ -20,5 +20,7 @@ class Client extends Model
         'Expiry_Month',
         'Expiry_year',
         'CCV',
+        'idTipoDocuement_idDocument',
+        'userId_idDocument',
 ];
 }

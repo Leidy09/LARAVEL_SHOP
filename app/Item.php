@@ -10,7 +10,11 @@ class Item extends Model
     protected  $table ='items';
     protected $fillable =[
         'price',
+        'idProduct',
+        'idOrder',
         'quantity',
+        'iva',
+
     ];
 
 }

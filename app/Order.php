@@ -9,6 +9,12 @@ class Order extends Model
     //
     protected  $table ='orders';
     protected $fillable =[
-
+        'dataShoped',
+        'userIdUser',
+        'authotizationNumber',
+        'idPayMethod',
+        'idPostofficeProvider',
+        'tracing_Number',
+        'post_Status',
     ];
 }

@@ -10,5 +10,6 @@ class Images extends Model
     protected  $table ='';
     protected  $fillable =[
         'route_image',
+        'idProduct',
     ];
 }
