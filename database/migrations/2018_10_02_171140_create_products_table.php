@@ -19,12 +19,12 @@ class CreateProductsTable extends Migration
             $table->string('description',250);
             $table->string('size',45);
             $table->boolean('visible',1);
-            $table->string('idcategory',10);
+            $table->string('category_id',10);
             $table->integer('price');
             $table->integer('iva');
             $table->timestamps();
 
-            $table->foreign('idCategory')->references('id')->on('categories');
+            $table->foreign('category_id')->references('id')->on('categories');
         });
 
     }

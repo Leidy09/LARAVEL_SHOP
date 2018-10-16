@@ -15,10 +15,10 @@ class CreateImagesTable extends Migration
     {
         Schema::create('images', function (Blueprint $table) {
             $table->string('route_image',255);
-            $table->integer('idProduct');
+            $table->integer('product_id');
             $table->timestamps();
 
-            $table->foreign('idProducto')->references('id')->on('products');
+            $table->foreign('producto_id')->references('id')->on('products');
         });
 
     }

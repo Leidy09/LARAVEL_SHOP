@@ -18,10 +18,10 @@ class CreateSalesTable extends Migration
             $table->dateTime('datefrom');
             $table->dateTime('dateto');
             $table->integer('disscount');
-            $table->integer('idProduct');
+            $table->integer('product_id');
             $table->timestamps();
 
-            $table->foreign('idProduct')->references('id')->on('products');
+            $table->foreign('product_id')->references('id')->on('products');
         });
     }
 
