@@ -12,4 +12,7 @@ class TypeDocumet extends Model
         'name',
         'abbreviation',
     ];
+        public function client(){
+            return $this->belongsTo(Client::class);
+        }
 }

@@ -16,5 +16,12 @@ class Item extends Model
         'iva',
 
     ];
+        public function client(){
+        return $this->belongsTo(Client::class);
+    }
+        public function order(){
+        return $this->hasMany(Order::class);
+    }
+
 
 }

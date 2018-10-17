@@ -11,5 +11,7 @@ class PayMethod extends Model
     protected $fillable =[
         'name',
     ];
-
+        public function order(){
+            return $this->belongsTo(Order::class);
+        }
 }

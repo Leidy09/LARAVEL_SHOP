@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Images extends Model
+class Image extends Model
 {
     //
     protected  $table ='';
@@ -12,4 +12,7 @@ class Images extends Model
         'route_image',
         'idProduct',
     ];
+    public function product(){
+        return $this->belongsTo(Product::class);
+    }
 }

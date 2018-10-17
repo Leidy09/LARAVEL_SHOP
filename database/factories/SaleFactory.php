@@ -6,7 +6,9 @@ $factory->define(Model::class, function (Faker $faker) {
     $products = \App\product::all()->pluck('id')->toArray();
     return [
         //
-        'route_image'=>$faker->text,
+        'datefrom'=>$faker->date($format = 'Y-m-d', $max = 'now'),
+        'dateto'=>$faker->date($format = 'Y-m-d', $max = 'now'),
+        'disscount'=>$faker->boolean,
         'product_id'=>$faker->optional()->randomElement($products),
 
     ];

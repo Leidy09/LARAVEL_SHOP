@@ -26,11 +26,11 @@ class CreateClientsTable extends Migration
             $table->integer('Expiry_Month');
             $table->integer('Expiry_year');
             $table->integer('CCV');
-            $table->integer('idTipoDocuement_idDocument');
+            $table->integer('tipoDocuement_idDocument');
             $table->integer('userId_idDocument');
             $table->timestamps();
 
-            $table->foreign('idTipoDocuement_idDocument')->references('id')->on('type_documnts');
+            $table->foreign('tipoDocuement_idDocument')->references('id')->on('type_documnts');
             $table->foreign('userId_idDocument')->references('id')->on('users');
         });
     }

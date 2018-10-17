@@ -23,4 +23,15 @@ class Client extends Model
         'idTipoDocuement_idDocument',
         'userId_idDocument',
 ];
+        public function item(){
+        return $this->hasMany(Item::class);
+         }
+
+        public function user(){
+        return $this->belongsTo(User::class);
+        }
+
+        public function typeDocument(){
+            return $this->belongsTo(TypeDocumet::class);
+        }
 }
